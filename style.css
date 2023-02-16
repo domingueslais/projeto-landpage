@@ -36,9 +36,7 @@ nav, footer {
     text-shadow: var(--cor4);    
     padding: 10px;
 }
-img {
-    height: 10vh;
-}
+
 
 nav>a {
     color: var(--cor4);
@@ -48,10 +46,7 @@ nav>a {
     padding: 10px;
 }
 nav>a:hover{
-    background-color: var(--cor2);
-}
-a>img:hover {
-    text-decoration: none;
+    background-color: var(--cor3);
 }
 header  {
     display: block;
@@ -59,6 +54,8 @@ header  {
     text-align: center;
     background: url('midias/background01.jpg') center left no-repeat scroll;
     background-size: cover;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.532);
+
 }
 div#titulo {
     display: inline-block;
@@ -81,6 +78,13 @@ h1 {
     padding: 0px;
     margin: 0px;
 }
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor1);
+    margin: auto;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.532);
+}
 main>p, form>p {
     line-height: 1.5em;
     padding: 15px;
@@ -96,18 +100,82 @@ h2 {
     color: var(--cor1);
     padding: 10px;
 }
+.fotos {
+    text-align: center;
+}
 figure {
     display: inline-block;
     padding-top: 20px;
 }
-img {
-    height: 25vw;
+figure>img {
+    height: 23vw;
     padding-top: 5px;
     padding-left: 5px;
 }
 figure>figcaption {
     font-size: 0.6em;
     text-align: center;
+    margin-bottom: 20px;
+}
+video {
+    position: relative;
+    display: block;
+    height: 30%;
+    width: 50%;
+    background-color: var(--cor3);
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;   
+}
+video>source {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+#mapa {
+    position: relative;
+    display: block;
+    height: 30vh;
+    width: 50%;
+    background-color: var(--cor3);
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;   
+}
+#mapa>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+input {
+    display: block;
+    height: 10vh;
+    width: 25vw;
+    background-color: var(--cor2);
+    font-family: var(--texto);
+    font-size: larger;
+    margin: auto;
+}
+input:hover {
+    text-decoration: underline;
+}
+#redes {
+    text-align: center;
+
+}
+#redes>a>img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+#redes img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
 }
 footer{
     text-align: center;
