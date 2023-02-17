@@ -85,7 +85,7 @@ main {
     margin: auto;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.532);
 }
-main>p, form>p {
+main>p, form>p, section>p {
     line-height: 1.5em;
     padding: 15px;
 }
@@ -151,14 +151,35 @@ video>source {
     width: 90%;
     height: 90%;
 }
+.atencao {
+    color: red;
+    text-align: center;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.562);
+}
+#aviso {
+    height: 53vh;
+    background-color: rgba(235, 86, 86, 0.651);
+    background-size: cover;
+    border: 4px dashed red;
+    margin-bottom: 20px;
+}
+.recado {
+    display: block;
+    text-align: center;
+}
+strong {
+    font-weight: bold;
+    text-decoration: underline;
+}
 input {
     display: block;
-    height: 10vh;
-    width: 25vw;
+    width: fit-content;
     background-color: var(--cor2);
     font-family: var(--texto);
     font-size: larger;
     margin: auto;
+    padding: 5px;
+    margin-bottom: 20px;
 }
 input:hover {
     text-decoration: underline;
