@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> 
+
+    <style>
+        @charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+@font-face {
+    font-family: 'texto';
+    src: url('fontes/Aileron-Regular.otf') format('opentype');
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --texto: 'texto', verdana, sans-serif;
+
+    --cor1: #f2f2f2;
+    --cor2: #47a6445e;
+    --cor3: #97bf41;
+    --cor4: #0d0d0d;
+    --cor5: #022601;
+}
+
+html {
+    min-height: 100vh;
+    background-color: var(--cor2);
+    font-family: var(--texto);
+    font-size: 1.5em;
+    color: var(--cor4);
+
+}
+nav, footer {
+    display: block;
+    background-color: #f2f2f293;
+    text-align: right;
+    text-shadow: var(--cor4);    
+    padding: 10px;
+}
+
+
+nav>a {
+    color: var(--cor4);
+    text-decoration: none;
+}
+nav>a {
+    padding: 10px;
+}
+nav>a:hover{
+    background-color: var(--cor3);
+}
+header  {
+    display: block;
+    height: 83vh;
+    text-align: center;
+    background: url('midias/background01.jpg') center left no-repeat scroll;
+    background-size: cover;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.532);
+
+}
+div#titulo {
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.3);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 10px;
+    border: 8px dashed var(--cor4);
+}
+div>p {
+    color: var(--cor1);
+    padding-bottom: 20px;
+}
+h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 15vh;
+    color: var(--cor3);
+    text-shadow: 3px 3px var(--cor4);
+    padding: 0px;
+    margin: 0px;
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor1);
+    margin: auto;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.532);
+}
+    </style>
+
+    <title>Trote 2023</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="formulario.html">Inscrição</a>
+            <a href="#">Fale conosco</a>
+        </nav>
+        <div id="titulo">
+            <h1>Trote 2023</h1>
+            <p>
+                Inscrição
+            </p>
+            
+        </div>
+    </header>
+    <main>
+        <form action="cadastro.php" method="get" autocomplete="off">
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="icurso">Curso:</label>
+                    <input type="text" id="icurso" required max-length="30" autocomplete="icurso">
+                </p>
+                <p>
+                    <label for="iidade">Idade:</label>
+                    <input type="number" id="iidade" step="0.1" autocomplete="off">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+        </form>
+    </main>
+</body>
+</html>
