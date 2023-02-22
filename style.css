@@ -36,8 +36,6 @@ nav, footer {
     text-shadow: var(--cor4);    
     padding: 10px;
 }
-
-
 nav>a {
     color: var(--cor4);
     text-decoration: none;
@@ -85,7 +83,7 @@ main {
     margin: auto;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.532);
 }
-main>p, form>p, section>p {
+main>p, section>p, form {
     line-height: 1.5em;
     padding: 15px;
 }
@@ -181,12 +179,14 @@ input {
     padding: 5px;
     margin-bottom: 20px;
 }
-input:hover {
+a {
+    text-decoration: none;
+}
+a:hover {
     text-decoration: underline;
 }
 #redes {
     text-align: center;
-
 }
 #redes>a>img{
     height: 100px;
