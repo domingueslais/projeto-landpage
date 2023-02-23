@@ -198,6 +198,11 @@ a:hover {
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
 }
+#resposta {
+    display: block;
+    text-align: center;
+    color: black;
+}
 footer{
     text-align: center;
     font-size: 0.7em;

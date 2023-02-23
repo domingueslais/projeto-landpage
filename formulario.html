@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css"> 
-    <script src="script.js"></script>
+   
     
     <style>
-        main {
-            text-align: center;
-        }
+
         input.lado {
             display: inline-block;
         }
@@ -33,39 +31,38 @@
         </div>
     </header>
     <main>
-                <p>
-                    <label for="inome">Nome &#x270d</label>
-                    <input type="text" name="nome" id="inome" required maxlength="40" placeholder="Nome completo">
-                </p>
-                <p>
-                    <label for="icurso">Curso &#x1F393</label>
-                    <input type="text" id="icurso" required max-length="30" autocomplete="icurso">
-                </p>
-                <p>
-                    <label for="iano">Nascimento &#x1F51E</label>
-                    <input type="number" id="iano" required placeholder="Apenas ano">
-                </p>
-                <p>
-                    <label for="iok">Curto &#x1F44D</label>
-                    <input type="text" id="iok" autocomplete="off">
-                </p>
-                <p>
-                    <label for="inao">Não Curto &#x1F44E</label>
-                    <input type="text" id="inao" autocomplete="off">
-                </p>
-                <p>
-                    <input type="button" value="Enviar" onclick="inscricao()" class="lado">
-                    <input type="reset" value="Limpar" class="lado">
-                </p>
+        <section id="resposta">
+            <p>
+                <label for="inome">Nome &#x270d</label>
+                <input type="text" name="nome" id="inome" required maxlength="40" placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="icurso">Curso &#x1F393</label>
+                <input type="text" id="icurso" required max-length="3" autocomplete="icurso" placeholder="Abreviado">
+            </p>
+            <p>
+                <label for="iano">Nascimento &#x1F51E</label>
+                <input type="number" id="iano" required placeholder="Apenas ano">
+            </p>
+            <p>
+                <label for="isim">Topo &#x1F44D</label>
+                <input type="text" id="isim" autocomplete="off">
+            </p>
+            <p>
+                <label for="inao">Não Topo &#x1F44E</label>
+                <input type="text" id="inao" autocomplete="off">
+            </p>
+            <p>
+                <input type="button" value="Enviar" onclick='envio()'>
+            </p>
         
-        <div id="resposta">
-
-        </div>
+        </section>
     </main>
     <footer>
         <p>
             Produzido por <a href="https://github.com/domingueslais" target="_blank" rel="external">Laís Domingues</a>
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
