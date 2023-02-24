@@ -7,11 +7,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css"> 
    
-    
     <style>
-
-        input.lado {
-            display: inline-block;
+        textarea {
+            font-family: var(--texto);
+            background-color: var(--cor2);
         }
     </style>
     <title>Trote 2023</title>
@@ -45,12 +44,14 @@
                 <input type="number" id="iano" required placeholder="Apenas ano">
             </p>
             <p>
-                <label for="isim">Topo &#x1F44D</label>
-                <input type="text" id="isim" autocomplete="off">
+                <label for="isim">Topo &#x1F44D</label><br>
+                <textarea id="isim" autocomplete="off" cols="46" rows="10">
+                </textarea>
             </p>
             <p>
-                <label for="inao">Não Topo &#x1F44E</label>
-                <input type="text" id="inao" autocomplete="off">
+                <label for="inao">Não Topo &#x1F44E</label><br>
+                <textarea id="inao" autocomplete="off" cols="46" rows="10">
+                </textarea>
             </p>
             <p>
                 <input type="button" value="Enviar" onclick='envio()'>
