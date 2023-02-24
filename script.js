@@ -1,4 +1,4 @@
-//alert("Evento apenas para MAIORES DE 18 anos!")
+alert("Evento apenas para MAIORES DE 18 anos!")
 
 function envio() {
     //alert("OK")
